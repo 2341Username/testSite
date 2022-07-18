@@ -490,7 +490,8 @@ body {
   -webkit-box-flex: 1;
       -ms-flex: 1 0;
           flex: 1 0;
-  height: auto;
+  height: 400px;
+  width: auto;
   margin-right: 20px;
   border: 1px solid #000;
 }
@@ -1352,7 +1353,7 @@ body {
 @media (max-width: 440px) {
   .midblock__top-image {
     height: 300px;
-    width: auto;
+    width: 100%;
   }
 
   .topblock {
@@ -1374,7 +1375,7 @@ body {
 @media (max-width: 375px) {
   .midblock__top-image {
     height: 200px;
-    width: auto;
+    width: 100%;
   }
 
   .topblock__info2-title {
