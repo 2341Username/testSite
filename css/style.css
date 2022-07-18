@@ -176,7 +176,7 @@ body {
   left: 0;
   width: 100%;
   z-index: 3;
-  background: rgba(71, 77, 116, 0.47);
+  background: rgba(71, 77, 116, 0.67);
   height: 100%;
 }
 
@@ -1236,6 +1236,7 @@ body {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    overflow: auto;
   }
 
   .header__menu-list {
