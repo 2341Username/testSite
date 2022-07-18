@@ -593,6 +593,7 @@ height: 60px;
 }
 
 @media(max-width: 1000px){
+	.midblock__bot-text{text-align: center;}
 		.container{max-width: none;overflow: hidden;}
 	.midblock__top-texts{margin-top: 30px;}
 	.midblock__top{display: flex;
