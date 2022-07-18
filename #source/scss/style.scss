@@ -600,7 +600,7 @@ background-size:cover;margin-left: 5px;margin-right: 5px;}
 	display: flex; 
 	align-items: center;
 }
-.footer__inner-mail{width: 100%;display: flex;justify-content: center;align-items: center;}
+.footer__inner-mail{a{color:rgba(0,0,0, 0.88);padding-left: 5px;}width: 100%;display: flex;justify-content: center;align-items: center;}
 .footer__inner-rights{width: 100%;display: flex;justify-content: center;align-items: center;}
 .footer__inner-soc-item{margin-left: 16px;
 	img{width: 35px;height: 35px;background-image: cover;}
@@ -616,7 +616,7 @@ background-size:cover;margin-left: 5px;margin-right: 5px;}
 
 @media(max-width: 1000px){
 	.footer__inner-soc-item{img{width: 25px;height: 25px;}}
-	.midblock__bot-text{text-align: center;}
+	.midblock__bot-text{text-align: center;margin-left: 0;}
 		.container{max-width: none;overflow: hidden;}
 	.midblock__top-texts{margin-top: 30px;}
 	.midblock__top{display: flex;
@@ -659,6 +659,9 @@ background-size:cover;margin-left: 5px;margin-right: 5px;}
 .header__burger{display:none;}
 
 @media(max-width:767px){
+	.footer{height: 40px;}
+	.footer__inner-soc-item{width: 20px;height: 20px;img{width: 20px;height: 20px;}}
+	.footer__inner{height: 100%;font-size: 10px;}
 	.topblock__inner{padding-top: 100px;}
 	.header__burger{
 		margin-right: 20px;
@@ -725,6 +728,11 @@ background-size:cover;margin-left: 5px;margin-right: 5px;}
 	
 }
 
+@media(max-width:600px){
+	.footer__inner{font-size: 8px;padding-right: 4px;padding-left: 4px;}
+	.footer__inner-soc{margin-left: 5px;}
+	.footer__inner-soc-item{img{width: 16px;height: 16px;}}
+}
 @media(max-width:700px){
 	.topblock{background-position: center;}
 	.donateblock__cols{margin-right: 40px;}
@@ -733,7 +741,8 @@ background-size:cover;margin-left: 5px;margin-right: 5px;}
 	overflow: hidden;
 	height: 250px;}
 }
-@media(max-width:500px){
+@media(max-width:500px){.footer__inner{font-size: 7px;}
+.footer__inner-soc-item{padding-right: 5px;}
 	.topblock__info2{margin-top: 40px;margin-bottom: 20px;}
 	.topblock__info2-text{width: 80%;}
 	.topblock__info1-images-ellipse{width: 80px;height: 80px;}
@@ -760,7 +769,7 @@ background-size:cover;margin-left: 5px;margin-right: 5px;}
 	.donateblock__text{font-size: 20px;}
 }
 
-@media(max-width: 375px){
+@media(max-width: 375px){.footer__inner{font-size: 5px;}
 	.midblock__top-image{height: 200px;width: 100%;}
 	.topblock__info2-title{font-size: 22px;}
 	.topblock__info2-text{font-size: 10px;}
