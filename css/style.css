@@ -330,7 +330,8 @@ body {
 }
 
 .topblock__info1-images-ellipse {
-  margin-right: 25px;
+  margin-right: 16px;
+  margin-left: 16px;
   border-radius: 50%;
   background: rgba(0, 0, 0, 0);
   border: 2px solid #fff;
@@ -931,6 +932,23 @@ body {
   background-image: cover;
 }
 
+@media (max-width: 1200px) {
+  .midblock {
+    margin-top: 60px;
+  }
+
+  .topblock {
+    background-position: center;
+  }
+
+  .topblock__info1-texts-text {
+    font-size: 15px;
+  }
+
+  .topblock__info2-text {
+    font-size: 12px;
+  }
+}
 @media (max-width: 1000px) {
   .container {
     max-width: none;
@@ -1028,13 +1046,70 @@ body {
   }
 }
 @media (max-width: 930px) {
+  .topblock__info1-texts {
+    width: 80%;
+  }
+
+  .topblock__info1-images {
+    margin-top: 40px;
+  }
+
+  .topblock {
+    height: 1000px;
+  }
+
+  .topblock__inner {
+    height: 1000px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+
   .sliderblock__item-text {
     font-size: 32px;
     width: 50%;
     left: 30%;
   }
+
+  .topblock__info1 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
+  .topblock__info2 {
+    margin-bottom: 60px;
+  }
 }
 @media (max-width: 780px) {
+  .donateblock__cols-pay {
+    margin-right: 0;
+  }
+
+  .donateblock__cols-pay {
+    height: 300px;
+    width: 100%;
+  }
+
+  .topblock {
+    height: 1200px;
+  }
+
+  .topblock__inner {
+    height: 1200px;
+  }
+
   .midblock__bot-column {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1049,6 +1124,28 @@ body {
   }
 }
 @media (max-width: 700px) {
+  .topblock {
+    background-position: center;
+  }
+
+  .donateblock__cols {
+    margin-right: 40px;
+  }
+
+  .donateblock__title {
+    font-size: 32px;
+    width: auto;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .donateblock__title img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+
   .sliderblock__item-text {
     font-size: 26px;
     width: 50%;
@@ -1058,6 +1155,40 @@ body {
   }
 }
 @media (max-width: 500px) {
+  .topblock__info2 {
+    margin-top: 40px;
+    margin-bottom: 20px;
+  }
+
+  .topblock__info2-text {
+    width: 80%;
+  }
+
+  .topblock__info1-images-ellipse {
+    width: 80px;
+    height: 80px;
+  }
+
+  .topblock__info1-images-row {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+
+  .topblock {
+    background-size: cover;
+    background-position: center;
+  }
+
+  .topblock {
+    height: 1000px;
+  }
+
+  .topblock__inner {
+    height: 1000px;
+  }
+
   .sliderblock__item-text {
     font-size: 24px;
     width: 60%;
@@ -1072,5 +1203,71 @@ body {
 
   .sliderblock__inner .slick-dots {
     left: 44%;
+  }
+}
+@media (max-width: 425px) {
+  .sliderblock {
+    display: none;
+  }
+}
+@media (max-width: 440px) {
+  .midblock__top-image {
+    height: 300px;
+    width: auto;
+  }
+
+  .topblock {
+    height: 1100px;
+  }
+
+  .topblock__inner {
+    height: 1100px;
+  }
+
+  .donateblock__title {
+    font-size: 24px;
+  }
+
+  .donateblock__text {
+    font-size: 20px;
+  }
+}
+@media (max-width: 375px) {
+  .midblock__top-image {
+    height: 200px;
+    width: auto;
+  }
+
+  .topblock__info2-title {
+    font-size: 22px;
+  }
+
+  .topblock__info2-text {
+    font-size: 10px;
+  }
+}
+@media (max-width: 340px) {
+  .topblock__info2 {
+    margin-top: 10px;
+  }
+
+  .topblock__info1-images {
+    margin-top: 20px;
+  }
+
+  .topblock__info1-texts-text {
+    font-size: 12px;
+  }
+
+  .donateblock__cols {
+    margin-top: 20px;
+  }
+
+  .donateblock__title {
+    font-size: 18px;
+  }
+
+  .donateblock__text {
+    font-size: 16px;
   }
 }
