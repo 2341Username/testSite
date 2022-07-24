@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@simonwep/pickr/dist/themes/monolith.min.css"/> <!-- 'monolith' theme -->
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	
+		<div class="header">
+			<div class="container">
+				<div class="header__inner">
+				   <div class="header__logo">Logo</div>
+				   <div class="header__burger">
+				   	<span></span>
+				   </div>
+				   <div class="header__menu">
+				   	<ul class="header__menu-list">
+				   		<li class="header__btnMain "><a href="#">Главная</a></li>
+				   		<li class="header__btnMain"><a href="#">Описание серверов</a></li>
+				   		<li class="header__btnMain current"><a href="#">Донат</a></li>
+				   		<li class="header__btnMain"><a href="#">FAQ</a></li>
+				   	</ul>
+				   </div>
+				</div>
+			</div>
+	</div>
+	<div class="donate">
+		<img src="src/account.jpg" alt="" class="donate__bg">
+
+		<div class="container">
+
+			<div class="donate__inner">
+				<div class="donate__colorpicker">
+					<div class="donate__colorpicker-title">Выберите цвет - <div class="pickr"></div></div>
+					<input type="text" placeholder="введите префикс" maxlength="5" class="donate__colopicker-prefix">
+					<div class="donate__colorpicker-cost">Цена: 100 коинов</div>
+					<div class="donate__colorpicker-pay">Оплатить</div>
+					<div class="donate__colorpicker-btn">Закрыть</div>
+				</div>
+				<div class="donate__donate">
+
+					<div class="donate__donate-title">Донат</div>
+					<div class="donate__radios">
+						<input autocomplete="off" type="radio" name="typepay" id="radio_withacc" class="donate__radios-radio">
+						<label for="radio_withacc">С аккаунтом</label>
+						<input autocomplete="off" type="radio" name="typepay" id="radio__withnick" class="donate__radios-radio">
+						<label for="radio__withnick">по нику в игре</label>
+					</div>
+					<input autocomplete="off" type="text" class="inputnick" placeholder="ваш ник в игре">
+					<div class="donate__alert-radios">!!! Выбран донат по нику, из-за этого
+						приобретенные коины будут доступны только пока вы остаетесь на этой странице.
+						Для возможности хранения коинов необходим аккаунт на сайте. !!!
+					</div>
+					<div class="donate__donate-cols">
+						<div class="donate__donate-server">
+						<div class="donate__donate-server-btn">
+							<img src="src/plus.png" alt="" class="donate__donate-server-btn-img">
+							   <div class="donate__donate-server-btn-text">Выбрать сервер</div>
+						</div>
+						<div class="donate__donate-server-list">
+							<div class="donate__donate-server-list-item">
+								<input autocomplete="off"  type="radio" name="radioserver" id="radio_vanila" class="donate__donate-server-list-item-radio">
+								<label for="radio_vanila">Vanila</label>
+							</div>
+							<div class="donate__donate-server-list-item">
+								<input autocomplete="off" type="radio" name="radioserver" id="radio_s2" class="donate__donate-server-list-item-radio">
+								<label for="radio_s2">Server 2</label>
+							</div>
+						</div>
+					</div>
+						<div class="donate__donate-type">
+							<div class="donate__donate-type-btn">
+								<img src="src/plus.png" alt="" class="donate__donate-type-btn-img">
+							   <div class="donate__donate-type-btn-text">Выбрать вид доната</div>
+							</div>
+							<div class="donate__donate-type-list">
+								<div class="donate__donate-type-list-item vanila server2 nickcolor">
+									<img src="src/plus.png" alt="" class="donate__donate-type-list-item-img nickcolor">
+									<div class="donate__donate-type-list-item-text nickcolor">Цвет ника -</div>
+									<div class="donate__donate-type-list-item-cost">- 100 коинов</div>
+									<div class="donate__donate-type-list-item-curr nickcolor"></div>
+								</div>
+							
+								
+								<div class="donate__donate-type-list-item vanila server2 prefix">
+									<img src="src/plus.png" alt="" class="donate__donate-type-list-item-img prefix">
+									<div class="donate__donate-type-list-item-text prefix">Префикс -</div>
+									<div class="donate__donate-type-list-item-cost">- 100 коинов</div>
+									<div class="donate__donate-type-list-item-curr prefix"></div>
+								</div>
+
+
+								<div class="donate__donate-type-list-item server2 testoption">
+									<img src="src/plus.png" alt="" class="donate__donate-type-list-item-img ">
+									<div class="donate__donate-type-list-item-text ">Тестовая опция -</div>
+									<div class="donate__donate-type-list-item-cost">- 1020 коинов</div>
+								
+								</div>
+
+							</div>
+						</div>
+					
+					</div>
+				
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="footer">
+		<div class="container">
+			<div class="footer__inner">
+				<div class="footer__inner-mail">По вопросам:<a href="#">huesos@gmail.com</a></div>
+			<div class="footer__inner-rights">какая-то телега про права</div>
+			<div class="footer__inner-soc">
+				Подписывайтесь на нас в: 
+			<a href="#" class="footer__inner-soc-item"><img src="src/vk.png" alt=""></a>
+			<a href="#" class="footer__inner-soc-item"><img src="src/tg.png" alt=""></a>
+			<a href="#" class="footer__inner-soc-item"><img src="src/youtube.png" alt=""></a>
+			</div>
+			</div>
+		</div>
+	</div>
+</body>
+
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@simonwep/pickr/dist/pickr.min.js"></script>
+<script src="js/slick.min.js"></script>
+<script src="js/main.js"></script>
+</html>
